@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="java.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Spotify</h2>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Search</li>
+          <li>Your Library</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Welcome Back</h1>
+      <div class="playlist-grid">
+        <div class="playlist" onclick="playSong('song1.mp3')">
+          <img src="cover1.jpg" alt="Cover" />
+          <p>Top Hits</p>
+        </div>
+        <div class="playlist" onclick="playSong('song2.mp3')">
+          <img src="cover2.jpg" alt="Cover" />
+          <p>Chill Vibes</p>
+        </div>
+        <!-- Add more playlists as needed -->
+      </div>
+    </main>
+
+    <footer class="player">
+      <audio id="audioPlayer" controls>
+        <source src="" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
